@@ -1,0 +1,28 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #4c3c3c;
+}
+img{
+    width: 60%;
+    height: auto;
+}
+
+.title{
+    color: #4c3c3c;
+    text-decoration: underline;
+    margin-top: 8%;
+}
+ul{
+    list-style: none;
+}
+h3{
+    text-decoration: underline;
+}
+.info{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}

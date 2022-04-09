@@ -1,0 +1,171 @@
+body, html{
+    margin: 0;
+    padding: 0;   
+}
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title{
+    text-align: center;
+    margin-top: 7%;
+    text-decoration: underline;
+    color: #4c3c3c;
+}
+.subtext{
+    text-align: center;
+    color: #4c3c3c;
+}
+.images img{
+    width: 80%;
+    margin-left: 13%;
+}
+
+/* Other Amenities Cards and Cardholders */
+
+.cardholder{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 24%;
+    height: auto;
+    border: 2px solid #4c3c3c;
+    transition: 0.6s;
+
+  }
+  .card img{
+    height: 50%;
+    width: 100%;
+  }
+  .card p{
+    text-align: center;
+    font-size: 110%;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 4px 8px 0 #4c3c3c;
+  }
+
+
+
+
+
+
+
+
+
+  /* Cardholder 2 -------------- */
+  .cardholder-2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .cardholder-2 .card {
+    /* Add shadows to create the "card" effect */
+    width: 17%;
+    height: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.6s;
+    margin-top: 5%;
+  }
+  .cardholder-2 .card img{
+    height: 50%;
+    width: 100%;
+  }
+  .cardholder-2 .card p{
+    text-align: center;
+    font-size: 110%;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .cardholder-2 .card:hover {
+    box-shadow: 0 4px 8px 0 #4c3c3c;
+  }
+
+
+
+
+  /* If screen smaller than normal */
+
+  @media screen and (max-width: 980px){
+
+    .title{
+      text-align: center;
+      margin-top: 10%;
+      text-decoration: underline;
+      color: #4c3c3c;
+  }
+
+
+  /* Cardholder 1 */
+
+  
+.cardholder{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  transition: 0.6s;
+
+}
+.card img{
+  height: 50%;
+  width: 100%;
+}
+.card p{
+  text-align: center;
+  font-size: 110%;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 4px 8px 0 #4c3c3c;
+}
+
+
+
+      /* Cardholder 2 -------------- */
+  .cardholder-2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cardholder-2 .card {
+    /* Add shadows to create the "card" effect */
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.6s;
+    margin-top: 5%;
+  }
+  .cardholder-2 .card img{
+    height: 50%;
+    width: 100%;
+  }
+  .cardholder-2 .card p{
+    text-align: center;
+    font-size: 110%;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .cardholder-2 .card:hover {
+    box-shadow: 0 4px 8px 0 #4c3c3c;
+  }
+  }
