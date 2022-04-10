@@ -82,7 +82,7 @@ header ul li a{
 .dropbtn {
 position: relative;
 list-style: none;
-font-size: 15px;
+font-size: 100%;
 padding: 2px;
 background: none;
 border: none !important;
@@ -423,7 +423,7 @@ header.sticky ul li:hover li a{
   height: 200px;
   margin-top: 0%;
   transform-style: preserve-3d;
-  animation: rotate 45s linear infinite;
+  animation: rotate 80s linear infinite;
 }
 
 @keyframes rotate{
