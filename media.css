@@ -692,3 +692,107 @@
     transition: 0.6s;
   }
   }
+
+  @media screen and (max-width > 1440px) {
+      /* header end */
+  /* Slider Start */
+  .slideshow-container {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin: auto;
+    border: none; 
+  }
+  
+  
+  .slides {
+      display: flex;
+      overflow: hidden;
+      overflow-x: hidden;
+      scroll-snap-type:none;
+      scroll-behavior: none;
+      -webkit-overflow-scrolling: touch;
+      border: hidden;
+      padding-right: 0%;
+    margin-right: 0%;
+    }
+    .slides > div {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 100%;
+      height: 800px;
+      padding-right: 0%;
+      margin-right: 0%;
+      border-radius: 10px;
+      background: #eee;
+      transform-origin: center center;
+      transform: scale(1);
+      transition: transform 0.5s;
+      position: relative;
+      border: hidden;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100%;
+    }
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 800px;
+    border: hidden;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+  }
+  
+  
+  .mySlides img {
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      border: hidden;
+    }
+    .mySlides img {
+      -webkit-animation: zoomeffect 10s infinite;
+       -moz-animation: zoomeffect 10s infinite;
+       animation: zoomeffect 10s infinite;
+    }
+    @-webkit-keyframes zoomeffect{
+            0%{
+                background-position:center;
+              transform:scale(1,1);
+              border: none;
+            }
+            100%{
+                background-position:center;
+              transform:scale(1.2, 1.2);
+              border: none;
+            }
+    }
+    @keyframes zoomeffect{
+            0%{
+                background-position:center;
+              transform:scale(1);
+              border: none;
+            }
+            100%{
+                background-position:center;
+              transform:scale(1.2, 1.2);
+              border: none;
+            }
+    }
+  }
